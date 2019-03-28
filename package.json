@@ -1,0 +1,26 @@
+{
+  "name": "PureUI",
+  "version": "1.5.1",
+  "description": "The StyleSheet for PureUI",
+  "scss": "src/index.scss",
+  "main": "css/pure.css",
+  "style": "css/pure.css",
+  "scripts": {
+    "build": "npm run build-clean && npm run copy && npm run build-scss && npm run build-scss-minify && npm run build-autoprefix",
+    "build-clean": "rimraf css",
+    "build-scss": "node-sass --output-style expanded --source-map true src/index.scss css/pure.css",
+    "build-scss-minify": "node-sass --output-style compressed --source-map true src/index.scss css/pure.min.css",
+    "build-autoprefix": "postcss --use autoprefixer -c postcss.json css/*.css -d css/",
+    "copy": "copyfiles -f src/fonts/*.* css/fonts/",
+    "prepublish": "npm run build",
+    "start": "npm run build-scss -- --watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.5.0",
+    "copyfiles": "^2.1.0",
+    "eslint-config-o2team": "^0.1.6",
+    "node-sass": "^4.11.0",
+    "postcss-cli": "^6.1.2",
+    "rimraf": "^2.6.3"
+  }
+}
