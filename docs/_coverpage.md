@@ -1,13 +1,10 @@
-![logo](_media/icon.svg)
+<!-- ![logo](assets/logo.svg) -->
 
-# docsify
+# PureStyles
 
-> A magical documentation site generator.
+渐进式前端样式库
 
-* Simple and lightweight (~12kb gzipped)
-* Multiple themes
-* Not build static html files
-
-[GitHub](https://github.com/docsifyjs/docsify/)
-[Get Started](#quick-start)
-https://www.njleonzhang.com/docsify-demo-box-vue/#/
+[GitHub](https://github.com/xinpingJun/PureUI)
+[马上开始 <i class="iconfont icon-down"></i>](#main)
+<!-- background image -->
+![](assets/banner3.jpg)

@@ -2,26 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>PureStyles - 一个</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
+  <meta name="description" content="The StyleSheet for PureUI">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="../css/pure.min.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_539333_ah8wb2hv6yknvcxr.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster"rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/pure-styles@0.0.1/css/pure.css"> -->
+  <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
   <div id="app"></div>
   <script>
-    window.$docsify = {
-      name: '',
-      repo: '',
-      mergeNavbar: true
+   window.$docsify = {
+      name: 'PureStyles',
+      coverpage: true,
+      loadSidebar: true,
+      themeColor: '#6190E8',
+      auto2top: true,
+      nameLink: '#/',
+      loadSidebar: '_sidebar.md',
+      repo: 'https://github.com/xinpingJun/PureUI',
+      alias: {
+        '/zh-cn/': '/zh-cn/README.md',
+      },
+      copyCode: {
+       buttonText: {
+         '/zh-cn/': '点击复制',
+       },
+       errorText: {
+         '/zh-cn/': '错误',
+       },
+       successText: {
+         '/zh-cn/': '复制',
+       },
+
+      search : [
+        '/zh-cn/',      // => /zh-cn/README.md
+      ],
+      // 完整配置参数
+      search: {
+        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+        paths: 'auto', // or 'auto'
+        placeholder: {
+          '/zh-cn/': '搜索',
+        },
+        noData: '找不到结果',
+        depth: 2
+      },
+
+
+     }
     }
   </script>
+  <script src="https://unpkg.com/docsify-copy-code@2"></script>
   <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-  <script src="//unpkg.com/vue/dist/vue.min.js"></script>
-  <script src="//unpkg.com/vuep/dist/vuep.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+  <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+  <!-- <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script> -->
 </body>
 </html>

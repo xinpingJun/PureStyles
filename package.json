@@ -1,7 +1,7 @@
 {
-  "name": "PureUI",
-  "version": "1.5.1",
-  "description": "The StyleSheet for PureUI",
+  "name": "pure-styles",
+  "version": "0.0.1",
+  "description": "The StyleSheet for PureStyles",
   "scss": "src/index.scss",
   "main": "css/pure.css",
   "style": "css/pure.css",
