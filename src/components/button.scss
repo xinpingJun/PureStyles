@@ -5,11 +5,10 @@
 
 $btn-hover-tint-percent: 15%;
 $btn-active-shade-percent: 10%;
-
+// 普通按钮状态
 @mixin button-status($border-color, $background-color) {
   border-color: $border-color;
   background-color: $background-color;
-
   &:hover {
     background-color: tint($background-color, $btn-hover-tint-percent);
     border-color: tint($background-color, $btn-hover-tint-percent);
@@ -19,19 +18,18 @@ $btn-active-shade-percent: 10%;
     border-color: shade($background-color, $btn-active-shade-percent);
   }
 }
-
+// 幽灵按钮状态
 @mixin button-hollow-status($text-color, $border-color) {
   background: none;
   color: $text-color;
-
   &:hover {
-    background: none;
-    color: tint($text-color, $btn-hover-tint-percent);
+    background: $border-color;
+    color: #fff;
     border-color: tint($border-color, $btn-hover-tint-percent);
   }
   &:active {
-    background: none;
-    color: tint($text-color, $btn-active-shade-percent);
+    background: $border-color;
+    color: #fff;
     border-color: tint($border-color, $btn-active-shade-percent);
   }
 }
@@ -118,7 +116,6 @@ $btn-active-shade-percent: 10%;
     @include button-hollow-status($btn-text-border, transparent);
     color: $text-color;
     border: none;
-
     &:disabled,
     &:disabled:hover,
     &:disabled:active, {
@@ -186,16 +183,6 @@ $btn-active-shade-percent: 10%;
     }
     .pure-btn__text {
       font-size: $btn-font-size-smer;
-    }
-  }
-  &--circle {
-    width: $btn-circle-size;
-    height: $btn-circle-size;
-    padding: 0;
-    border-radius: 50%;
-
-    .pure-btn__icon {
-      font-size: 14px;
     }
   }
 

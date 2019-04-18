@@ -7,13 +7,13 @@
 $css-prefix: pure;
 
 /* The Color of O2Team Brand */
-$brand-color                : #6190E8;
-$brand-color-light          : #78A4F4;
-$brand-color-dark           : #346FC2;
+$brand-color                : #3e8ef7;
+$brand-color-light          : #589ffc;
+$brand-color-dark           : #247cf0;
 
 /* Color */
-$color-normal               : #6190E8;
-$color-primary              : #6190E8;
+$color-normal               : #3e8ef7;
+$color-primary              : #3e8ef7;
 $color-success              : #13CE66;
 $color-error                : #FF4949;
 $color-warning              : #FFC82C;
@@ -26,7 +26,7 @@ $brand-blue-100             : #D0DEF8;
 $brand-blue-200             : #B0C8F4;
 $brand-blue-300             : #90B1EF;
 $brand-blue-400             : #79A1EB;
-$brand-blue-500             : #6190E8;
+$brand-blue-500             : #3e8ef7;
 $brand-blue-600             : #5988E5;
 $brand-blue-700             : #4F7DE2;
 $brand-blue-800             : #4573DE;
@@ -102,7 +102,7 @@ $text-color                 : #3F536E;
 $title-color                : #2C405A;
 
 $border-color-gray          : #CCC;
-$border-color-base          : #C5D9E8;
+$border-color-base          : #e4eaec;
 $border-color-split         : tint($border-color-base, 20%);
 $border-color-light         : tint($border-color-base, 30%);
 $border-color-lighter       : tint($border-color-base, 50%);
@@ -121,8 +121,8 @@ $door-color                 : #F1E4ED;
 $wall-color                 : #EEF0F0;
 
 /* Border */
-$border-radius-base         : 4px;
-$border-radius-sm           : 4px;
+$border-radius-base         : 3px;
+$border-radius-sm           : 2px;
 
 /* Font */
 $font-family                : -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;

@@ -6,11 +6,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="The StyleSheet for PureUI">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
-  <link rel="stylesheet" href="//at.alicdn.com/t/font_539333_ah8wb2hv6yknvcxr.css">
-  <link href="https://fonts.googleapis.com/css?family=Lobster"rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://unpkg.com/pure-styles@0.0.1/css/pure.css"> -->
-  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css"> -->
+  <link rel="stylesheet" href="http://localhost:8082/pure.css">
+  <!-- <link rel="stylesheet" href="//unpkg.com/pure-styles@0.0.1/css/pure.css"> -->
+  <style>
+    .cover.show{
+      display: flex !important;
+    }
+    .cover h2 {
+      font-size: 30px;
+    }
+    .cover h2 a{
+      text-decoration: none;
+      color: #fff;
+      font-weight: normal;
+      font-size: 18px;
+    }
+    .cover h2 a:hover{
+      text-decoration: none;
+      color: #fff;
+      font-weight: normal;
+    }
+    .marginT10{
+      margin-top:10px;
+    }
+    .marginT10 button{
+      margin-right:10px;
+    }
+  </style>
 </head>
 <body>
   <div id="app"></div>
@@ -19,7 +43,7 @@
       name: 'PureStyles',
       coverpage: true,
       loadSidebar: true,
-      themeColor: '#6190E8',
+      // themeColor: '#6190E8',
       auto2top: true,
       nameLink: '#/',
       loadSidebar: '_sidebar.md',
@@ -61,6 +85,7 @@
   <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+  
   <!-- <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script> -->
 </body>
 </html>
